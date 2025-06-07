@@ -1,0 +1,33 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs
+*.log
+
+# AWS Lambda builds
+dist/
+build/
+.env
+*.zip
+
+# Editor configs
+.vscode/
+.idea/
+.DS_Store
+
+# BandChain related
+__pycache__/
+*.pyc
+*.wasm
+cache/
+artifacts/
+
+# Keys and secrets
+*.pem
+*.key
+*.crt
+*.env.local
