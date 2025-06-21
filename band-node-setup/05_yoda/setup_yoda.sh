@@ -23,8 +23,9 @@ for i in {1..5}; do
   yoda keys add REPORTER_$i --keyring-backend test
 done
 
-# echo "🌐 Configurando executor remoto..."
-# export EXECUTOR_URL=https://7toi554gy3.execute-api.us-east-2.amazonaws.com/prod/executor  # CAMBIA ESTO por tu URL real
-yoda config executor "rest:${https://test.executor.nash.io/fake?timeout=10s}?timeout=10s"
+echo "🌐 Configurando executor remoto..."
+EXECUTOR_URL="https://7toi554gy3.execute-api.us-east-2.amazonaws.com/prod/executor"
+yoda config executor "rest:${EXECUTOR_URL}?timeout=10s"
+
 echo "✅ Yoda configurado correctamente."
 
