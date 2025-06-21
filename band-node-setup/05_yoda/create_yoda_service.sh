@@ -4,7 +4,7 @@ set -e
 
 USERNAME=$(whoami)
 
-# �� Crear servicio systemd para Yoda
+# ��️ Crear servicio systemd para Yoda
 sudo tee /etc/systemd/system/yoda.service > /dev/null <<EOF
 [Unit]
 Description=Yoda Daemon
@@ -22,3 +22,4 @@ WantedBy=multi-user.target
 EOF
 
 echo "✅ Servicio yoda.service creado correctamente."
+

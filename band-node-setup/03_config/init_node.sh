@@ -16,3 +16,4 @@ wget -qO- $BIN_FILES_URL | tar xvz -C $HOME/.band/
 
 # 👛 Crea una wallet local
 bandd keys add $WALLET_NAME --keyring-backend test
+

@@ -8,7 +8,7 @@ source ~/band-node-setup/01_env/env.sh
 # 👤 Obtener nombre de usuario actual
 USERNAME=$(whoami)
 
-# �� Crear archivo bandd.service con Cosmovisor
+# ��️ Crear archivo bandd.service con Cosmovisor
 sudo tee /etc/systemd/system/bandd.service > /dev/null <<EOF
 [Unit]
 Description=BandChain Node Daemon (Cosmovisor)
@@ -31,3 +31,4 @@ WantedBy=multi-user.target
 EOF
 
 echo "✅ Servicio bandd.service creado en /etc/systemd/system"
+
