@@ -4,8 +4,8 @@ set -e
 
 echo "🚀 Empaquetando executor NASF para AWS Lambda..."
 
-# Paso 1: Verificar que inde.js existe
-if [ ! -f "inde.js" ]; then
+# Paso 1: Verificar que index.js existe
+if [ ! -f "index.js" ]; then
   echo "❌ Error: index.js no existe en esta carpeta."
   exit 1
 fi
@@ -30,3 +30,4 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "✅ ¡ZIP creado correctamente y listo para subir a Lambda!"
+
