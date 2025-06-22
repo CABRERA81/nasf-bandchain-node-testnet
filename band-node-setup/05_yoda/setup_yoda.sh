@@ -9,7 +9,7 @@ echo "🧹 Borrando configuración vieja de Yoda (si existe)..."
 rm -rf ~/.yoda
 
 echo "⚙️ Configurando Yoda..."
-yoda config chain-id band-laozi-testnet6
+yoda config chain-id $CHAIN_ID
 yoda config node http://localhost:26657
 yoda config broadcast-timeout "5m"
 yoda config rpc-poll-interval "1s"
@@ -24,7 +24,6 @@ for i in {1..5}; do
 done
 
 echo "🌐 Configurando executor remoto..."
-EXECUTOR_URL="https://7toi554gy3.execute-api.us-east-2.amazonaws.com/prod/executor"
 yoda config executor "rest:${EXECUTOR_URL}?timeout=10s"
 
 echo "✅ Yoda configurado correctamente."
