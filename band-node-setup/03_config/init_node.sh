@@ -8,7 +8,7 @@ source ~/band-node-setup/01_env/env.sh
 # 🧬 Inicializa el nodo con el moniker y el chain ID
 bandd init "$MONIKER" --chain-id $CHAIN_ID
 
-# �� Descarga el archivo génesis
+#  Descarga el archivo génesis
 wget $GENESIS_FILE_URL -O $HOME/.band/config/genesis.json
 
 # 📦 Descarga los archivos de oráculo y descomprime
